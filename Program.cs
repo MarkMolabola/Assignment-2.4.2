@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             double [] numbers = new double[3];
-            int counter = 0;
+            int index = 0;
             Console.WriteLine("Input three numbers: ");
             for (int i = 0; i < 3; i++)
             {
@@ -19,12 +19,12 @@
                 if (numbers[i] > maxNumber)
                 {
                     maxNumber = numbers[i];
-                    counter = i + 1; // Store the index of the largest number
+                    index = i + 1; // Store the index of the largest number
 
                 }
             }
             string winner = "";
-            switch (counter)
+            switch (index)
             {
                 case 1:
                     winner = "first";
